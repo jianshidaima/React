@@ -1,0 +1,38 @@
+.Comment{
+	position: relative;
+	width: 100%;
+}
+.Comment .content{
+    position: relative;
+    width: 90vw;
+    margin-left: 5vw;
+    background: #fff;
+    height: 16vw;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+}
+.author{
+    position: relative;
+    width: 16vw;
+    text-align: center;
+    float: left;
+}
+.metadata{
+	position: relative;
+	width: 50vw;
+	text-align: center;
+}
+.metadata .data{
+	position: relative;
+	width: 100%;
+	font-size: 3vw;
+	line-height: 4vw;
+	color: #ccc;
+	text-align: center;
+}
+.text{
+position: relative;
+    margin-left: 3vw;
+    line-height: 9vw;
+    font-size: 4vw;
+}
