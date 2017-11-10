@@ -53,6 +53,7 @@ module.exports = {
     // changing JS code would still trigger a refresh.
   ],
   output: {
+    path: /data//把data.json放到这个路径下
     // Add /* filename */ comments to generated require()s in the output.
     pathinfo: true,
     // This does not produce a real file. It's just the virtual path that is
