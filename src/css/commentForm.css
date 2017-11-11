@@ -23,11 +23,11 @@ position: relative;
     outline: none;
 }
 .field>textarea{
-    position: relative;
+position: relative;
     width: 96%;
     padding-left: 2%;
     padding-right: 2%;
-    border: 1px solid#FF5722;
+    border: 1px solid#2196f3;
     border-radius: 2vw;
     color: #000;
     font-size: 4vw;

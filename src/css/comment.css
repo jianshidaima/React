@@ -9,13 +9,14 @@ position: relative;
     background: #f9fbf9cc;
 }
 .comments>h2{
-position: relative;
-    width: 100%;
     text-align: center;
-    background: #00BCD4;
+    background: #00bcd4;
     color: #fff;
     font-size: 5vw;
     line-height: 11vw;
+    position: fixed;
+    z-index: 99;
+    width: 100vw;
 }
 .divider{
   position: relative;

@@ -41,3 +41,8 @@ position: relative;
     line-height: 9vw;
     font-size: 4vw;
 }
+.CommentList{
+    position: relative;
+    z-index: 88;
+    padding-top: 10vw;
+}

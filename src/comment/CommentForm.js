@@ -9,7 +9,7 @@ class CommentForm  extends Component {
     let author = this.refs.author.value;
     let text = this.refs.text.value;
     let time = this.getData();
-    author === '' && text === ''? alert('请输入之后在提交！'):
+    author === '' || text === ''? alert('请输入之后在提交！'):
     this.props.onCommentSubmit({author,text,time});
     console.log(author,text);
   }
