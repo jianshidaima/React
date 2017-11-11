@@ -9,13 +9,18 @@ class CommentBox  extends Component {
   constructor(props) {
     super(props);
     this.state = {data: []};
-    console.log(this.props.url);
-    axios.get(this.props.url).then((comments) => {
-      console.log(comments.data.items);
-      this.setState({data:comments.data.items});
-    }).catch((err) => {
-      console.log(err)
-    })
+    // console.log(this.props.url);
+    // axios.get(this.props.url).then((comments) => {
+    //   console.log(comments.data.items);
+    //   this.setState({data:comments.data.items});
+    // }).catch((err) => {
+    //   console.log(err)
+    // })
+  }
+  handule(comment){
+    let comments = this.state.data;
+    let newCommets = comments.concat(comment);
+    this.setState({data:newCommets});
   }
   render() {
     return (
@@ -23,7 +28,7 @@ class CommentBox  extends Component {
         <h2>评论</h2>
         <div className='divider'></div>
         <CommentList data={this.state.data}/>
-        <CommentForm/>
+        <CommentForm onCommentSubmit={this.handule.bind(this)}/>
       </div>
     )
   }
