@@ -13,7 +13,7 @@ class CommentList extends Component {
 		    <ul> {
             cpm.map((comment,i) =>{
               return (
-                <Comment key={i} author={comment.author} data={comment.data} text={comment.text}/>
+                <Comment key={i} author={comment.author} data={comment.time} text={comment.text}/>
               )
             })
         } </ul>

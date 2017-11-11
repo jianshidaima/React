@@ -8,9 +8,31 @@ class CommentForm  extends Component {
     console.log('1');
     let author = this.refs.author.value;
     let text = this.refs.text.value;
+    let time = this.getData();
+    author === '' && text === ''? alert('请输入之后在提交！'):
+    this.props.onCommentSubmit({author,text,time});
     console.log(author,text);
-    this.props.onCommentSubmit({author,text,data:'刚刚。。'});
   }
+  getData(){
+    function p(s) {
+    return s < 10 ? '0' + s: s;
+    }
+    let myDate = new Date();
+    //获取当前年
+    let year=myDate.getFullYear();
+    //获取当前月
+    let month=myDate.getMonth()+1;
+    //获取当前日
+    let date=myDate.getDate(); 
+    let h=myDate.getHours();       //获取当前小时数(0-23)
+    let m=myDate.getMinutes();     //获取当前分钟数(0-59)
+    let s=myDate.getSeconds();  
+
+    let now=year+'-'+p(month)+"-"+p(date)+" "+p(h)+':'+p(m)+":"+p(s);
+    let data = now;
+    return data;
+  }
+  
   render() {
     return ( 
       <form className = 'form' onSubmit={this.handleSubmit.bind(this)}>
