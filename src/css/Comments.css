@@ -7,20 +7,25 @@
     width: 90vw;
     margin-left: 5vw;
     background: #fff;
-    height: 16vw;
+    min-height: 16vw;
     margin-bottom: 2vw;
     margin-top: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
 }
 .author{
-    position: relative;
-    width: 16vw;
-    text-align: center;
+position: relative;
+    width: 78%;
+    padding-left: 2%;
+    text-align: left;
     float: left;
+    color: #00bcd4;
 }
 .metadata{
-	position: relative;
-	width: 50vw;
-	text-align: center;
+position: relative;
+    width: 20%;
+    float: right;
+    text-align: center;
 }
 .metadata .data{
 	position: relative;
