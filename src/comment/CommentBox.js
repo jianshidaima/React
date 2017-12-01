@@ -25,7 +25,7 @@ class CommentBox  extends Component {
   render() {
     return (
       <div className='comments'>
-        <h2>评论</h2>
+        <h2>评论12</h2>
         <div className='divider'></div>
         <CommentList data={this.state.data}/>
         <CommentForm onCommentSubmit={this.handule.bind(this)}/>
